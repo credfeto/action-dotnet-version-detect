@@ -1,4 +1,4 @@
-# File Case Sensitivity Checker
+# Dotnet core version detector
 
 Determines the version of dotnet core to install based on the src/global.json
 
