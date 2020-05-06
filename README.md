@@ -17,7 +17,7 @@ jobs:
     steps:
       # Checkout the source code so we have some files to look at.
       - uses: actions/checkout@v1
-      # Run the case checker action
+      # Run the version detection action
       - name: Determine the version of dotnet core to install from src/global.json
         uses: credfeto/action-dotnet-version-detect@master
       - name: Setup .NET Core
