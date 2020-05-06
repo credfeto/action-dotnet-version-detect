@@ -1,5 +1,5 @@
-name: 'Case Sensitivity Checker'
-description: 'Check if there are any files or folders with same name differing only by case'
+name: '.NET core version detector'
+description: 'Determines the version of .NET core to install based on the contents of global.json'
 branding:
   icon: 'git-merge'
   color: 'gray-dark'
