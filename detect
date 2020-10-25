@@ -2,5 +2,4 @@
 set -eu
 
 echo .NET Core Version: `sed -n 's|.*"version":\s*"\([^"]*\)".*|\1|p' src/global.json`
-echo ::set-env name=DOTNET_VERSION::`sed -n 's|.*"version":\s*"\([^"]*\)".*|\1|p' src/global.json`
-
+echo DOTNET_VERSION=`sed -n 's|.*"version":\s*"\([^"]*\)".*|\1|p' src/global.json` >> $GITHUB_ENV
