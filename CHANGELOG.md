@@ -9,20 +9,11 @@ Please ADD ALL Changes to the UNRELASED SECTION and not a specific release
 ### Added
 ### Fixed
 ### Changed
+- Updated dependent components
 ### Removed
 ### Deployment Changes
 
-<!-- 
+<!--
 Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
 -->
-
-## [1.1.1] - 2020-10-25
-### Changed
-- Changed to use arse
-
-## [1.1.0] - 2020-10-24
-### Changed
-- Uses alpine linux rather than ubuntu latest for the docker container
-
-## [1.0.0] - 2020-05-06
-- Intial version
+## [0.0.0] - Project created
