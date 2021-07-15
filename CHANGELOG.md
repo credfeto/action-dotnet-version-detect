@@ -9,6 +9,7 @@ Please ADD ALL Changes to the UNRELASED SECTION and not a specific release
 ### Added
 ### Fixed
 ### Changed
+- Allow passing path to global.json to action
 ### Removed
 ### Deployment Changes
 

@@ -3,6 +3,13 @@ description: 'Determines the version of .NET core to install based on the conten
 branding:
   icon: 'git-merge'
   color: 'gray-dark'
+inputs:
+ file:
+    desciption: 'path to global.json'
+    default: src/global.json
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+     - ${{ inputs.file }}
+ 

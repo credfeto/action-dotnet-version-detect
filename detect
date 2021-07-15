@@ -1,5 +1,7 @@
 #!/bin/sh -l
 set -eu
 
-echo .NET Core Version: `sed -n 's|.*"version":\s*"\([^"]*\)".*|\1|p' src/global.json`
-echo DOTNET_VERSION=`sed -n 's|.*"version":\s*"\([^"]*\)".*|\1|p' src/global.json` >> $GITHUB_ENV
+VERSION=`sed -n 's|.*"version":\s*"\([^"]*\)".*|\1|p' $1`
+
+echo .NET Core Version: $VERSION
+echo DOTNET_VERSION=$VERSION >> $GITHUB_ENV
