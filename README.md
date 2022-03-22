@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v1
       # Run the version detection action
       - name: Determine the version of dotnet core to install from src/global.json
-        uses: credfeto/action-dotnet-version-detect@master
+        uses: credfeto/action-dotnet-version-detect@v1.2.1
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
         env:
