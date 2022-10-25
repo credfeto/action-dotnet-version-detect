@@ -1,7 +1,11 @@
 #!/bin/sh -l
 set -eu
 
-VERSION=`sed -n 's|.*"version":\s*"\([^"]*\)".*|\1|p' $1`
+VERSION="${2-}"
+[ -f "$1" ] && VERSION=$(sed -n 's|.*"version":\s*"\([^"]*\)".*|\1|p' "$1")
 
-echo .NET Core Version: $VERSION
-echo DOTNET_VERSION=$VERSION >> $GITHUB_ENV
+[ -z "$VERSION" ] && echo "Version not found" && exit 1
+
+echo ".NET Version: $VERSION"
+echo "DOTNET_VERSION=$VERSION" >> $GITHUB_ENV
+echo "DOTNET_VERSION=$VERSION" >> $GITHUB_OUTPUT

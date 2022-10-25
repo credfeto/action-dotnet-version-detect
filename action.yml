@@ -1,15 +1,19 @@
-name: '.NET core version detector'
+name: 'Dot Net version detector'
 description: 'Determines the version of .NET core to install based on the contents of global.json'
 branding:
   icon: 'git-merge'
   color: 'gray-dark'
 inputs:
  file:
-    desciption: 'path to global.json'
+    description: 'path to global.json'
     default: src/global.json
+    required: false
+ fallback:
+   description: 'fallback version if file does not exist'
+   default: 6.0.x
+   required: false
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-     - ${{ inputs.file }}
- 
+  using: 'composite'
+  steps:
+    - run: $GITHUB_ACTION_PATH/detect ${{ inputs.file }} ${{ inputs.fallback }}
+      shell: bash
