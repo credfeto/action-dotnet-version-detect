@@ -3,10 +3,10 @@
 Determines the version of dotnet core to install based on the src/global.json
 
 ## How to use it?
-This is a Github action, so it has to be added to a github workflow.  
+This is a GitHub action, so it has to be added to a GitHub workflow.  
 
 A simple example of running this action on all pushes to the repository would be
-add a `dotnetcore.yml` file under `.github/workflows` with the following content
+to add a `dotnetcore.yml` file under `.github/workflows` with the following content
 ```yaml
 on: [push]
 
@@ -15,11 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     name: 
     steps:
-      # Checkout the source code so we have some files to look at.
+      # Checkout the source code so there are some files to look at.
       - uses: actions/checkout@v1
       # Run the version detection action
       - name: Determine the version of dotnet core to install from src/global.json
-        uses: credfeto/action-dotnet-version-detect@v1.2.1
+        uses: credfeto/action-dotnet-version-detect@v1.3.0
         with:
           file: src/global.json
           fallback: 3.1.404
