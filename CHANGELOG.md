@@ -7,6 +7,7 @@ Please ADD ALL Changes to the UNRELASED SECTION and not a specific release
 
 ## [Unreleased]
 ### Added
+- Output variable of DOTNET_VERSION
 ### Fixed
 ### Changed
 - Updated to alpine 3.15.1
