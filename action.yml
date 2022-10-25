@@ -5,7 +5,7 @@ branding:
   color: 'gray-dark'
 inputs:
  file:
-    desciption: 'path to global.json'
+    description: 'path to global.json'
     default: src/global.json
 runs:
   using: 'composite'
