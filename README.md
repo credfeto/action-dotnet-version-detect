@@ -20,6 +20,9 @@ jobs:
       # Run the version detection action
       - name: Determine the version of dotnet core to install from src/global.json
         uses: credfeto/action-dotnet-version-detect@v1.2.1
+        with:
+          file: src/global.json
+          fallback: 3.1.404
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
         env:
