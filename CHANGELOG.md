@@ -11,6 +11,7 @@ Please ADD ALL Changes to the UNRELASED SECTION and not a specific release
 ### Fixed
 ### Changed
 - Updated to alpine 3.15.1
+- Changed to a composite action rather than using docker
 ### Removed
 ### Deployment Changes
 
