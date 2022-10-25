@@ -10,7 +10,6 @@ Please ADD ALL Changes to the UNRELEASED SECTION and not a specific release
 - Output variable of DOTNET_VERSION
 ### Fixed
 ### Changed
-- Updated to alpine 3.15.1
 - Changed to a composite action rather than using docker
 ### Removed
 ### Deployment Changes
